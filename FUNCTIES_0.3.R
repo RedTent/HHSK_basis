@@ -243,16 +243,19 @@ HHSKthema <- function(){
   require(ggplot2)
   hhskgroen <<- "#8dc63f"
   hhskblauw <<- "#0079c2"
-  hhskthema <<- theme_light() + theme(plot.title = element_text(color = hhskgroen,face="bold",hjust=0.5),
-                                     axis.title = element_text(color=hhskblauw,face="bold"),
-                                     axis.text = element_text(color=hhskblauw),
-                                     axis.ticks = element_line(color=hhskblauw),
-                                     axis.line.x = element_line(color=hhskblauw, size=0.5),
-                                     panel.border = element_rect(color = hhskblauw, size=1),
-                                     panel.grid.major = element_line(color=hhskgroen,linetype="dotted", size = 0.5),
-                                     panel.grid.minor = element_line(color=hhskgroen,linetype="dotted", size = 0.5)
-
-  )
+  hhskthema <<- theme_light() + 
+    theme( plot.title = element_text(color = hhskgroen, face = "bold", hjust = 0.5),
+           axis.title = element_text(color = hhskblauw, face = "bold"),
+           axis.text = element_text(color = hhskblauw),
+           axis.ticks = element_line(color = hhskblauw),
+           axis.line.x = element_line(color = hhskblauw, size = 0.5),
+           panel.border = element_rect(color = hhskblauw, size = 1),
+           panel.grid.major = element_line(color = hhskgroen,linetype = "dotted", size = 0.5),
+           panel.grid.minor = element_line(color = hhskgroen,linetype = "dotted", size = 0.5),
+           strip.background = element_rect(size = 20, fill = "white"),
+           strip.text = element_text(color = hhskgroen, size = 14, face = "bold")
+           
+    )
 }
 
 
